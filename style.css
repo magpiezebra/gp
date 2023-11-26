@@ -90,7 +90,7 @@ header a:focus {
     margin-left: calc((100vw - var(--base-width)) / -2);
     margin-bottom: 4rem;
     background: var(--black);
-    background-image: url('seurat.jpg');
+    background-image: url("seurat.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -99,7 +99,7 @@ header a:focus {
     text-align: center;
 }
 
-#banner div {
+#banner div, #referrers div {
     width: 80%;
     max-width: calc(var(--base-width) * 1.2);
     font-size: 140%;
@@ -165,7 +165,7 @@ p {
     text-indent: 1.5rem;
 }
 
-p:first-of-type, h3 + p {
+p:first-of-type, h2 + p, h3 + p {
     text-indent: 0;
 }
 
@@ -234,12 +234,42 @@ a:hover, a:focus {
     margin: 4rem 0 4rem calc((100vw - var(--base-width)) / -2);
     color: var(--white);
     background-color: var(--primary);
-    background-image: url("b.png");
+    background-image: url("bg.png");
     text-align: center;
     font-style: italic;
     font-size: 140%;
     padding: 4rem 2rem;
     box-sizing: border-box;
+}
+
+#title {
+    width: 100vw;
+    margin: 4rem 0 4rem calc((100vw - var(--base-width)) / -2);
+    color: var(--white);
+    background-color: var(--primary);
+    background-image: url("bg.png");
+    text-align: center;
+    font-size: 160%;
+    padding: 3.5rem 2rem;
+    box-sizing: border-box;
+}
+
+#info p {
+    text-indent: 0;
+    margin-top: 1rem;
+}
+
+#info ul {
+    margin-top: .3rem;
+    list-style: disc;
+    margin-left: 1rem;
+    padding-left: 1rem;
+    text-indent: 0;
+}
+
+#info ul li::marker {
+    color: var(--tertiary);
+    font-size: 87%;
 }
 
 @media all and (max-width: 1200px) {

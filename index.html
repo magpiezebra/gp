@@ -18,7 +18,7 @@
             <li><a href="/referrers">Referrers</a></li>
         </ul>
     </header>
-    
+
     <div id="banner">
         <div>
             <p>Psychological therapy and assessment with intelligence, curiosity, and understanding. Melbourne, Canberra, and telehealth across Australia.</p>
@@ -51,7 +51,7 @@
     </section>
 
     <section id="quote">
-        Psychotherapy is the art of un/becoming, not the science of symptoms.
+        "It is a joy to be hidden, and a disaster to not be found." —D.W. Winnocott
     </section>
 
     <section id="about">
@@ -94,10 +94,10 @@
                               "July", "August", "September", "October", "November", "December"];
           const upcomingMonthName = monthNames[currentDate.getMonth()];
           const year = currentDate.getFullYear();
-        
+
           return `${upcomingMonthName} ${year}`;
         }
-        
+
         // Set the text content of the span once the DOM is loaded
         document.addEventListener('DOMContentLoaded', (event) => {
           const textSpan = document.getElementById('upcoming-month-text');

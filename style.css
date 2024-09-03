@@ -6,7 +6,7 @@
     --grey: oklch(70% 0 0);
     --black: oklch(0% 0 0);
     --primary: oklch(75% 0.03 180);
-    --primary-dim: oklch(75% 0.03 180 / 80%);
+    --primary-dim: oklch(75% 0.03 180 / 20%);
     --secondary: oklch(75% 0.03 220);
     --secondary-dim: oklch(75% 0.03 220 / 20%);
     --tertiary: oklch(75% 0.03 10);
@@ -182,15 +182,15 @@ a:hover, a:focus {
     display: flex;
     overflow: hidden;
     margin: 1.5rem 0 3rem;
-    max-width: calc(var(--base-width) * 1.8);
-    margin-left: calc(var(--base-width) * -0.4);
-    margin-right: calc(var(--base-width) * -0.4);
+    max-width: calc(var(--base-width) * 2);
+    margin-left: calc(var(--base-width) * -0.5);
+    margin-right: calc(var(--base-width) * -0.5);
 }
 
 #bios div {
     flex: 1;
     margin: .5rem;
-    padding: 2rem;
+    padding: 1.8rem;
     position: relative;
     border-radius: .5rem;
 }
@@ -203,12 +203,20 @@ a:hover, a:focus {
     background: var(--tertiary-dim);
 }
 
+#bios div:nth-of-type(3) {
+    background: var(--primary-dim);
+}
+
 #bios div:nth-of-type(1) h2 {
     color: var(--secondary);
 }
 
 #bios div:nth-of-type(2) h2 {
     color: var(--tertiary);
+}
+
+#bios div:nth-of-type(3) h2 {
+    color: var(--primary);
 }
 
 #bios span {
@@ -221,13 +229,13 @@ a:hover, a:focus {
     font-size: 90%;
 }
 
-#appointments div {
+/* #appointments div {
     background: #eee;
     height: 400px;
     text-align: center;
     padding: 2rem;
     color: var(--grey);
-}
+} */
 
 #quote {
     width: 100vw;
@@ -272,7 +280,7 @@ a:hover, a:focus {
     font-size: 87%;
 }
 
-@media all and (max-width: 1200px) {
+@media all and (max-width: 1400px) {
     #bios {
         flex-direction: column;
         margin: 0;

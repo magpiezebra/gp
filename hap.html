@@ -80,7 +80,7 @@
         <p>Bilal, Danu, and Stephen see patients for 50–80 minutes and offer fees on a sliding scale. We offer Medicare rebates and a limited number of concession places.</p>
 
         <h3>Is there a waitlist?</h3>
-        <p>Bilal, Danu, and Stephen are taking on new patients in <span id="upcoming-month-text"></span>.</p>
+        <p>Bilal, Danu, and Stephen are taking on new patients<span id="upcoming-month-text"></span>.</p>
 
         <h3>Do I need a referral?</h3>
         <p>You do not need a referral to see a psychologist. However, if you wish to receive Medicare rebates, you will need a Mental Health Treatment Plan prepared by a GP. They must provide a letter with the date of referral, their name, signature and Medicare Provider Number; your name, date of birth and address; a request for services under Better Access; and a number of sessions (e.g. 6 or 10).</p>
@@ -99,7 +99,7 @@
           const upcomingMonthName = monthNames[currentDate.getMonth()];
           const year = currentDate.getFullYear();
 
-          return `${upcomingMonthName} ${year}`;
+          return ` in ${upcomingMonthName} ${year}`;
         }
 
         // Set the text content of the span once the DOM is loaded

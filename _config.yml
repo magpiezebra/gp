@@ -1,0 +1,4 @@
+url: "https://goodpsychology.com.au"
+timezone: Australia/Melbourne
+plugins:
+  - jekyll-sitemap

@@ -9,16 +9,16 @@
     <link rel="icon" href="/favicon.svg">
     <link rel="canonical" href="https://goodpsychology.com.au/">
     <meta name="author" content="Good Psychology">
-    <meta name="description" content="Psychological therapy and assessment with intelligence, curiosity, and understanding. Book an appointment in Brunswick, North Melbourne and Canberra.">
+    <meta name="description" content="{{ page.description }}">
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Good Psychology">
-    <meta property="og:description" content="Psychological therapy and assessment with intelligence, curiosity, and understanding. Melbourne, Canberra, and telehealth across Australia.">
+    <meta property="og:title" content="{% if page.title %}{{ page.title }} | Good Psychology | Psychotherapy Brunswick & East Melbourne{% else %}Good Psychology | Psychotherapy Brunswick & East Melbourne{% endif %}">
+    <meta property="og:description" content="{{ page.description }}">
     <meta property="og:site_name" content="Good Psychology">
     <meta property="og:locale" content="en_AU">
     <meta property="og:url" content="https://goodpsychology.com.au/">
-    <meta property="og:image" content="https://goodpsychology.com.au/seurat-card.jpg">
+    <meta property="og:image" content="https://goodpsychology.com.au/seurat-card.jpg">{% if page.index %}
 
     <!-- Schema.org for Google -->
     <script type="application/ld+json">
@@ -42,7 +42,7 @@
       },
       "description": "Psychological therapy and assessment with intelligence, curiosity, and understanding. Melbourne, Canberra, and telehealth across Australia."
     }
-    </script>
+    </script>{% endif %}
 </head>
 <body>
     <header>

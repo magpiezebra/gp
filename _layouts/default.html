@@ -48,11 +48,18 @@
     <header>
         <h1><a href="/">Good Psychology</a></h1>
         <ul>
-            <li><a href="#team">Team</a></li>
-            <li><a href="#appointments">Appointments</a></li>
-            <li><a href="#about">About</a></li>
+            <li><a href="/team">Team</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/resources">Resources</a></li>
         </ul>
     </header>
+
+    {% if page.index %}<div id="banner">
+        <div>
+            <p>Psychological therapy and assessment with intelligence, curiosity, and understanding. Melbourne, Canberra, and telehealth across Australia.</p>
+            <a href="#appointments" class="btn">Make an appointment</a>
+        </div>
+    </div>{% else %}<section id="title">{{ page.title }}</section>{% endif %}
 
     {{ content }}
 

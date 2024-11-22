@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title>{% if page.title %}{{ page.title }} | Good Psychology | Psychotherapy Brunswick & East Melbourne{% else %}Good Psychology | Psychotherapy Brunswick & East Melbourne{% endif %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/style.css?{{ site.time | date: '%y%m%d%H%M' }}">
-    <link rel="stylesheet" href="/fonts.css?231127">
+    <link rel="stylesheet" href="/css/style.css?{{ site.time | date: '%y%m%d%H%M' }}">
+    <link rel="stylesheet" href="/css/fonts.css">
     <link rel="icon" href="/favicon.svg">
     <link rel="canonical" href="https://goodpsychology.com.au/">
     <meta name="author" content="Good Psychology">
@@ -17,7 +17,7 @@
     <meta property="og:description" content="{{ page.description }}">
     <meta property="og:site_name" content="Good Psychology">
     <meta property="og:locale" content="en_AU">
-    <meta property="og:url" content="https://goodpsychology.com.au/">
+    <meta property="og:url" content="{% if page.url %}{{ site.url }}{{ page.url }}{% else %}https://goodpsychology.com.au{% endif %}">
     <meta property="og:image" content="https://goodpsychology.com.au/img/seurat-card.jpg">{% if page.index %}
 
     <!-- Schema.org for Google -->

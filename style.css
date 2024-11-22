@@ -90,7 +90,7 @@ header a:focus {
     margin-left: calc((100vw - var(--base-width)) / -2);
     margin-bottom: 4rem;
     background: var(--black);
-    background-image: url("seurat.jpg");
+    background-image: url("/img/seurat.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -247,7 +247,7 @@ a:hover, a:focus {
     margin: 4rem 0 4rem calc((100vw - var(--base-width)) / -2);
     color: var(--white);
     background-color: var(--primary);
-    background-image: url("bg.png");
+    background-image: url("/img/bg.png");
     text-align: center;
     font-size: 160%;
     padding: 3.5rem 2rem;

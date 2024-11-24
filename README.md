@@ -12,5 +12,4 @@ Good Psychology
 when ready to launch:
 - add `sitemap: true` to pages
 - rename `temp.html` to `index.html`
-- add sitemap to `robots.txt`
 - submit sitemap to google & check for errors: https://developers.google.com/search/docs/crawling-indexing/sitemaps/build-sitemap

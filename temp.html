@@ -1,64 +1,9 @@
 ---
-layout: null
-sitemap: true
+layout: default
+description: Psychological therapy and assessment with intelligence, curiosity, and understanding. Book an appointment in Brunswick, North Melbourne and Canberra.
+index: true
+# sitemap: true
 ---
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <title>Good Psychology</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/fonts.css">
-    <link rel="icon" href="/favicon.svg">
-    <link rel="canonical" href="https://goodpsychology.com.au/">
-    <meta name="author" content="Good Psychology">
-    <meta name="description" content="Psychological therapy and assessment with intelligence, curiosity, and understanding. Book an appointment in Brunswick, North Melbourne and Canberra.">
-
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Good Psychology">
-    <meta property="og:description" content="Psychological therapy and assessment with intelligence, curiosity, and understanding. Melbourne, Canberra, and telehealth across Australia.">
-    <meta property="og:site_name" content="Good Psychology">
-    <meta property="og:locale" content="en_AU">
-    <meta property="og:url" content="https://goodpsychology.com.au/">
-    <meta property="og:image" content="https://goodpsychology.com.au/img/seurat-card.jpg">
-
-    <!-- Schema.org for Google -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Good Psychology",
-      "url": "https://goodpsychology.com.au",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "Appointments",
-        "email": "info@goodpsychology.com.au"
-      },
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "62 Wellington Pde",
-        "addressLocality": "East Melbourne",
-        "addressRegion": "VIC",
-        "postalCode": "3002",
-        "addressCountry": "AU"
-      },
-      "description": "Psychological therapy and assessment with intelligence, curiosity, and understanding. Melbourne, Canberra, and telehealth across Australia."
-    }
-    </script>
-</head>
-<body>
-    <header>
-        <h1><a href="/">Good Psychology</a></h1>
-        <ul>
-            <li><a href="#team">Team</a></li>
-            <li><a href="#appointments">Appointments</a></li>
-            <li><a href="#about">About</a></li>
-        </ul>
-    </header>
-
     <div id="banner">
         <div>
             <p>Psychological therapy and assessment with intelligence, curiosity, and understanding. Melbourne, Canberra, and telehealth across Australia.</p>
@@ -128,10 +73,7 @@ sitemap: true
 
 
     <script>
-        document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',function(e){e.preventDefault();var t=document.querySelector(this.getAttribute('href'));if(t){var h=document.querySelector('header').offsetHeight,g=parseFloat(getComputedStyle(document.documentElement).fontSize),p=t.offsetTop-h-(g*1);window.scrollTo({top:p,behavior:'smooth'});this.blur()}})});
-
-
-        function getUpcomingMonthText() {
+         function getUpcomingMonthText() {
           const currentDate = new Date();
           currentDate.setMonth(currentDate.getMonth() + 1); // Move to the next month
           const monthNames = ["January", "February", "March", "April", "May", "June",
@@ -148,8 +90,3 @@ sitemap: true
           textSpan.textContent = getUpcomingMonthText();
         });
     </script>
-
-    <script data-goatcounter="https://goodpsychology.goatcounter.com/count"
-            async src="//gc.zgo.at/count.js"></script>
-  </body>
-  </html>

@@ -211,58 +211,44 @@ a:hover, a:focus {
     color: var(--secondary);
 }
 
-#bios {
+#team {
     display: flex;
     overflow: hidden;
-    margin: 1.5rem 0 3rem;
+    margin: 1.5rem 0 2rem;
     max-width: calc(var(--base-width) * 2);
     margin-left: calc(var(--base-width) * -0.5);
     margin-right: calc(var(--base-width) * -0.5);
 }
 
-#bios div {
+#team a {
     flex: 1;
-    margin: .5rem;
-    padding: 1.8rem;
+    margin: 1rem;
+    padding: 1.5rem;
     position: relative;
+    color: var(--black);
+    background: var(--secondary-dim);
+    border: 2px solid var(--secondary-dim);
     border-radius: .5rem;
+    transition: border-color .1s;
 }
 
-#bios div:nth-of-type(1) {
-    background: var(--secondary-dim);
-}
-
-#bios div:nth-of-type(2) {
-    background: var(--secondary-dim);
-}
-
-#bios div:nth-of-type(3) {
-    background: var(--tertiary-dim);
-}
-
-#bios div:nth-of-type(1) h3 {
+#team a h3 {
     color: var(--secondary);
 }
 
-#bios div:nth-of-type(2) h3 {
-    color: var(--secondary);
+#team a:focus, #team a:hover {
+    color: var(--black);
+    border-color: var(--secondary);
 }
 
-#bios div:nth-of-type(3) h3 {
-    color: var(--tertiary);
-}
-
-#bios span {
+#team span {
     display: block;
     margin: -.75rem 0 1.25rem;
 }
 
-#bios p {
-    font-size: 90%;
-}
-
-#bios img {
-    margin: .5rem 0 0;
+#team img {
+    user-select: none;
+    margin-bottom: .5rem;
 }
 
 #title {
@@ -305,15 +291,14 @@ details ul li::marker {
 
 featured-quote {
     display: block;
-    width: 100vw;
-    margin: 4rem 0 4rem calc((100vw - var(--base-width)) / -2);
-    color: var(--white);
-    background-color: var(--primary);
-    background-image: url("/img/bg.png");
+    width: calc(100% + 10rem);
+    margin: 3rem -5rem;
+    border-radius: .5rem;
+    background: var(--primary-dim);
     text-align: center;
     font-style: italic;
-    font-size: 140%;
-    padding: 4rem 2rem;
+    font-size: 120%;
+    padding: 2rem;
     box-sizing: border-box;
 }
 
@@ -328,14 +313,14 @@ a + img, p + img {
 }
 
 @media all and (max-width: 1400px) {
-    #bios {
+    #team {
         flex-direction: column;
         margin: 1.5rem 0;
         padding: 0;
         max-width: var(--base-width);
     }
 
-    #bios div {
+    #team div {
         max-width: 100%;
         overflow: hidden;
         margin: 2rem -1.5rem 0;
@@ -384,7 +369,7 @@ a + img, p + img {
         display: none;
     }
 
-    #bios div {
+    #team div {
         margin: 7vw -5vw 0;
         padding: 5vw 10vw;
     }

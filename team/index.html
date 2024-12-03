@@ -2,17 +2,46 @@
 layout: default
 title: "Our team"
 description: Meet our team of psychologists and psychotherapists.
-# sitemap: true
-# date: 2024-11-24
+sitemap: true
+date: 2024-12-03
 ---
-    <p>We are Medicare-registered psychologists holding unconditional registration with the Psychology Board of Australia. We are trained in the provision of evidence-based psychological therapies including cognitive-behavioural therapy, interpersonal therapy, psychoeducation, skills training and relaxation strategies.</p>
-    <p>Our work is culturally informed and gender-affirming.</p>
-    <p>We welcome all referrals, including adults, adolescents, children and families, couples, culturally and linguistically diverse groups, Aboriginal and Torres Strait Islanders, First Nations people, and the LGBTIQ+ community.</p>
-    <p>If you would like to speak with any of us, please email for a 24h call-back.</p>
+    <p>Bilal, Danu, and Stephen are clinical psychologists with a shared passion for psychoanalytic psychotherapy in its most radical and soulful forms. They met while teaching at the Australian National University.</p>
+    <p>We are unconditionally registered with the Psychology Board of Australia and trained in the provision of evidence-supported therapeutic approaches such as cognitive-behavioural therapy, interpersonal therapy, psychoeducation, skills training and relaxation strategies.</p>
 
-    <section id="info">
-        <p><a href="danu-sivanathan">Dr Danu Sivanathan</a></p>
-
-        <p><a href="bilal-reda">Mr Bilal Reda</a></p>
-  
+    <section id="bios">
+        <div>
+            <h3>Mr Bilal Reda</h3>
+            <span>Brunswick, Melbourne</span>
+            <img src="/img/bilal-reda.jpg" alt="Bilal Reda">
+            <a href="/team/bilal-reda" class="arrow">Read bio</a>
+        </div>
+        <div>
+            <h3>Dr Danu Sivanathan</h3>
+            <span>East Melbourne, Melbourne</span>
+            <img src="/img/danu-sivanathan.jpg" alt="Danu Sivanathan">
+            <a href="/team/danu-sivanathan" class="arrow">Read bio</a>
+        </div>
     </section>
+
+    <p>Bilal and Danu are taking on new patients<span id="upcoming-month-text"></span>.</p>
+    <p>We welcome all referrals, including adults, adolescents, children and families, couples, culturally and linguistically diverse groups, Aboriginal and Torres Strait Islanders, and the LGBTIQ+ community.</p>
+    <p>Our colleague Dr Stephen Tang currently has a waitlist of several months.</p>
+
+    <script>
+        function getUpcomingMonthText() {
+         const currentDate = new Date();
+         currentDate.setMonth(currentDate.getMonth() + 1); // Move to the next month
+         const monthNames = ["January", "February", "March", "April", "May", "June",
+                             "July", "August", "September", "October", "November", "December"];
+         const upcomingMonthName = monthNames[currentDate.getMonth()];
+         const year = currentDate.getFullYear();
+
+         return ` in ${upcomingMonthName} ${year}`;
+       }
+
+       // Set the text content of the span once the DOM is loaded
+       document.addEventListener('DOMContentLoaded', (event) => {
+         const textSpan = document.getElementById('upcoming-month-text');
+         textSpan.textContent = getUpcomingMonthText();
+       });
+   </script>

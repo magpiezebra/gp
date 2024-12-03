@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>{% if page.title %}{{ page.title }} | Good Psychology | Psychotherapy Brunswick & East Melbourne{% else %}Good Psychology | Psychotherapy Brunswick & East Melbourne{% endif %}</title>
+    <title>{% if page.title %}{{ page.title }} | Good Psychology | Melbourne Psychoanalytic Psychotherapy{% else %}Good Psychology | Melbourne Psychoanalytic Psychotherapy{% endif %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/css/style.css?{{ site.time | date: '%y%m%d%H%M' }}">
     <link rel="stylesheet" href="/css/fonts.css">
@@ -13,7 +13,7 @@
 
     <!-- Open Graph -->
     <meta property="og:type" content="website">
-    <meta property="og:title" content="{% if page.title %}{{ page.title }} | Good Psychology | Psychotherapy Brunswick & East Melbourne{% else %}Good Psychology | Psychotherapy Brunswick & East Melbourne{% endif %}">
+    <meta property="og:title" content="{% if page.title %}{{ page.title }} | Good Psychology | Melbourne Psychoanalytic Psychotherapy{% else %}Good Psychology | Melbourne Psychoanalytic Psychotherapy{% endif %}">
     <meta property="og:description" content="{{ page.description }}">
     <meta property="og:site_name" content="Good Psychology">
     <meta property="og:locale" content="en_AU">
@@ -49,19 +49,29 @@
         <h1><a href="/">Good Psychology</a></h1>
         <ul>
             <li><a href="/team">Team</a></li>
+            <li><a href="/approach">Approach</a></li>
             <li><a href="/contact">Contact</a></li>
-            <li><a href="/resources">Resources</a></li>
         </ul>
     </header>
 
+    <main>
     {% if page.index %}<div id="banner">
         <div>
             <p>Psychological therapy and assessment with intelligence, curiosity, and understanding. Melbourne, Canberra, and telehealth across Australia.</p>
-            <a href="#appointments" class="btn">Make an appointment</a>
+            <a href="/team" class="btn">Meet our team</a>
+            <a href="/contact" class="btn">Book an appointment</a>
         </div>
     </div>{% else %}<section id="title">{{ page.title }}</section>{% endif %}
 
     {{ content }}
+
+    </main>
+
+    <footer>
+        Good Psychology operates on Wurundjeri land.<br>
+        Email: <a href="mailto:info@goodpsychology.com.au">info@goodpsychology.com.au</a><br>
+        62 Wellington Parade, East Melbourne VIC 3002
+    </footer>
 
     <script>
         document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',function(e){e.preventDefault();var t=document.querySelector(this.getAttribute('href'));if(t){var h=document.querySelector('header').offsetHeight,g=parseFloat(getComputedStyle(document.documentElement).fontSize),p=t.offsetTop-h-(g*1);window.scrollTo({top:p,behavior:'smooth'});this.blur()}})});

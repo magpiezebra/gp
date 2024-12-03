@@ -128,7 +128,7 @@ a {
 }
 
 a:hover, a:focus {
-    color: var(--secondary);
+    color: var(--grey);
 }
 
 footer a {

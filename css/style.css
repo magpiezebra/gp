@@ -43,7 +43,7 @@ html {
 main {
     hyphens: auto;
     max-width: var(--base-width);
-    margin: 0 auto 3rem;
+    margin: 0 auto 4rem;
 }
 
 header {
@@ -88,7 +88,7 @@ footer {
     width: 100vw;
     height: 3rem;
     text-align: center;
-    color: var(--white);
+    color: var(--grey);
     background: var(--black);
     font-size: 90%;
 }
@@ -146,7 +146,7 @@ a.arrow {
     font-style: italic;
     display: block;
     margin-top: 1rem;
-    margin: 1.5rem 0 auto;
+    margin: 1.5rem 0;
     padding: .6rem 1rem .7rem;
     color: var(--black);
     background: var(--secondary-dim);
@@ -216,8 +216,8 @@ a:hover, a:focus {
     overflow: hidden;
     margin: 1.5rem 0 2rem;
     max-width: calc(var(--base-width) * 2);
-    margin-left: calc(var(--base-width) * -0.5);
-    margin-right: calc(var(--base-width) * -0.5);
+    margin-left: calc(var(--base-width) * -0.4);
+    margin-right: calc(var(--base-width) * -0.4);
 }
 
 #team a {
@@ -248,7 +248,7 @@ a:hover, a:focus {
 
 #team img {
     user-select: none;
-    margin-bottom: .5rem;
+    margin: 0 0 .5rem;
 }
 
 #title {
@@ -304,27 +304,23 @@ featured-quote {
 
 img {
     width: 100%;
-    margin-bottom: 2rem;
+    margin: 2rem 0;
     border-radius: .1rem;
-}
-
-a + img, p + img {
-    margin-top: 2rem;
 }
 
 @media all and (max-width: 1400px) {
     #team {
         flex-direction: column;
-        margin: 1.5rem 0;
+        margin: .5rem 0 2.5rem;
         padding: 0;
         max-width: var(--base-width);
     }
 
-    #team div {
+    #team a {
         max-width: 100%;
         overflow: hidden;
-        margin: 2rem -1.5rem 0;
-        padding: 1.5rem 3rem;
+        margin: 2rem auto 0;
+        padding: 1.5rem;
     }
 }
 
@@ -369,9 +365,9 @@ a + img, p + img {
         display: none;
     }
 
-    #team div {
-        margin: 7vw -5vw 0;
-        padding: 5vw 10vw;
+    #team a {
+        margin: 7vw auto 0;
+        padding: 7vw;
     }
 
     #title {
@@ -381,8 +377,8 @@ a + img, p + img {
 
     featured-quote {
         width: 100vw;
-        margin: 4rem -5vw 4rem;
-        padding: 10vw;
+        margin: 2.5rem -5vw 3rem;
+        padding: 8vw;
     }
 }
 

@@ -1,86 +1,112 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-EHR8021Y72"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+    <head>
+        <!-- Google tag (gtag.js) -->
+        <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=G-EHR8021Y72"
+        ></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
 
-      gtag('config', 'G-EHR8021Y72');
-    </script>
-    <meta charset="utf-8">
-    <title>{% if page.title %}{{ page.title }} | Good Psychology | Melbourne Psychoanalytic Psychotherapy{% else %}Good Psychology | Melbourne Psychoanalytic Psychotherapy{% endif %}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/css/style.css?{{ site.time | date: '%y%m%d%H%M' }}">
-    <link rel="stylesheet" href="/css/fonts.css">
-    <link rel="icon" href="/favicon.svg">
-    <link rel="canonical" href="https://goodpsychology.com.au/">
-    <meta name="author" content="Good Psychology">
-    <meta name="description" content="{{ page.description }}">
+            gtag("config", "G-EHR8021Y72");
+        </script>
+        <meta charset="utf-8" />
+        <title>
+            {% if page.title %}{{ page.title }} | Good Psychology | Melbourne
+            Psychoanalytic Psychotherapy{% else %}Good Psychology | Melbourne
+            Psychoanalytic Psychotherapy{% endif %}
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+            rel="stylesheet"
+            href="/css/style.css?{{ site.time | date: '%y%m%d%H%M' }}"
+        />
+        <link rel="stylesheet" href="/css/fonts.css" />
+        <link rel="icon" href="/favicon.svg" />
+        <link rel="canonical" href="https://goodpsychology.com.au/" />
+        <meta name="author" content="Good Psychology" />
+        <meta name="description" content="{{ page.description }}" />
 
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="{% if page.title %}{{ page.title }} | Good Psychology | Melbourne Psychoanalytic Psychotherapy{% else %}Good Psychology | Melbourne Psychoanalytic Psychotherapy{% endif %}">
-    <meta property="og:description" content="{{ page.description }}">
-    <meta property="og:site_name" content="Good Psychology">
-    <meta property="og:locale" content="en_AU">
-    <meta property="og:url" content="{% if page.url %}{{ site.url }}{{ page.url }}{% else %}https://goodpsychology.com.au{% endif %}">
-    <meta property="og:image" content="https://goodpsychology.com.au/img/seurat-card.jpg">{% if page.index %}
+        <!-- Open Graph -->
+        <meta property="og:type" content="website" />
+        <meta
+            property="og:title"
+            content="{% if page.title %}{{ page.title }} | Good Psychology | Melbourne Psychoanalytic Psychotherapy{% else %}Good Psychology | Melbourne Psychoanalytic Psychotherapy{% endif %}"
+        />
+        <meta property="og:description" content="{{ page.description }}" />
+        <meta property="og:site_name" content="Good Psychology" />
+        <meta property="og:locale" content="en_AU" />
+        <meta
+            property="og:url"
+            content="{% if page.url %}{{ site.url }}{{ page.url }}{% else %}https://goodpsychology.com.au{% endif %}"
+        />
+        <meta
+            property="og:image"
+            content="https://goodpsychology.com.au/img/seurat-card.jpg"
+        />
+        {% if page.index %}
 
-    <!-- Schema.org for Google -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Good Psychology",
-      "url": "https://goodpsychology.com.au",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "Appointments",
-        "email": "info@goodpsychology.com.au"
-      },
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "62 Wellington Pde",
-        "addressLocality": "East Melbourne",
-        "addressRegion": "VIC",
-        "postalCode": "3002",
-        "addressCountry": "AU"
-      },
-      "description": "Psychological therapy and assessment with intelligence, curiosity, and understanding. Melbourne, Canberra, and telehealth across Australia."
-    }
-    </script>{% endif %}
-</head>
-<body>
-    <header>
-        <h1><a href="/">Good Psychology</a></h1>
-        <ul>
-            <li><a href="/team">Team</a></li>
-            <li><a href="/approach">Approach</a></li>
-            <li><a href="/contact">Contact</a></li>
-        </ul>
-    </header>
+        <!-- Schema.org for Google -->
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "LocalBusiness",
+                "name": "Good Psychology",
+                "url": "https://goodpsychology.com.au",
+                "contactPoint": {
+                    "@type": "ContactPoint",
+                    "contactType": "Appointments",
+                    "email": "info@goodpsychology.com.au"
+                },
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "62 Wellington Pde",
+                    "addressLocality": "East Melbourne",
+                    "addressRegion": "VIC",
+                    "postalCode": "3002",
+                    "addressCountry": "AU"
+                },
+                "description": "Psychological therapy and assessment with intelligence, curiosity, and understanding. Melbourne, Canberra, and telehealth across Australia."
+            }
+        </script>
+        {% endif %}
+    </head>
+    <body>
+        <header>
+            <h1><a href="/">Good Psychology</a></h1>
+            <ul>
+                <li><a href="/team">Team</a></li>
+                <li><a href="/approach">Approach</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </header>
 
-    <main>
+        <main>
+            {% if page.index %}
+            <div id="banner">
+                <div>
+                    <p>
+                        Psychological therapy and assessment with intelligence,
+                        curiosity, and understanding. Melbourne, Canberra, and
+                        telehealth across Australia.
+                    </p>
+                    <a href="/team" class="btn">Meet our team</a>
+                    <a href="/contact" class="btn">Book an appointment</a>
+                </div>
+            </div>
+            {% else %}
+            <section id="title">{{ page.title }}</section>
+            {% endif %} {{ content }}
+        </main>
 
-    {% if page.index %}<div id="banner">
-        <div>
-            <p>Psychological therapy and assessment with intelligence, curiosity, and understanding. Melbourne, Canberra, and telehealth across Australia.</p>
-            <a href="/team" class="btn">Meet our team</a>
-            <a href="/contact" class="btn">Book an appointment</a>
-        </div>
-    </div>{% else %}<section id="title">{{ page.title }}</section>{% endif %}
-
-{{ content }}
-
-    </main>
-
-    <footer>
-        Good Psychology operates on Wurundjeri land.<br>
-        Email: <a href="mailto:info@goodpsychology.com.au">info@goodpsychology.com.au</a><br>
-        62 Wellington Parade, East Melbourne VIC 3002
-    </footer>
-  </body>
-  </html>
+        <footer>
+            Good Psychology operates on Wurundjeri land.<br />
+            62 Wellington Parade, East Melbourne VIC 3002
+        </footer>
+    </body>
+</html>
